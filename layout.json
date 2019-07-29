@@ -1,0 +1,62 @@
+{
+   "logo":"/third_party/cn-activecampaign.png",
+   "integDispName":"ActiveCampaign",
+   "subStepList":[
+      {
+         "stepName":"Connect",
+         "stepId":"connect",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect.json"
+         }
+      },
+      {
+         "stepName":"Data Validation",
+         "stepId":"step_1",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/validation_step.json"
+         },
+         "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+         }
+      },
+      {
+         "stepName":"Configure Sync Preferences ",
+         "stepId":"step_2",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/mapping_step.json"
+         },
+         "editConfig":{
+            "title":"Manage how Chargebee syncs data with ActiveCampaign",
+            "display" : "Manage sync rules",
+            "apiEndPoint": {
+               "type":"GET",
+               "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/edit_mapping_step.json"
+            }
+         }
+      },
+      {
+         "stepName":"Run Initial Sync",
+         "stepId":"step_3",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/initial_sync_step.json"
+         }
+      },
+      {
+         "stepName":"Final step",
+         "stepId":"completed",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json"
+         },
+         "fullSyncApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+         }
+      }
+   ]
+}

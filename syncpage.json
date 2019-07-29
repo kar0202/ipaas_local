@@ -1,0 +1,49 @@
+{
+ "icon": "/third_party/cn-xero.png",
+ 
+ "overview": [
+   {
+     "card": {
+       "processingText": " Syncing All customers and their subscriptions",
+       "request": {
+         "apiEndPoint": {
+           "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/final.json",
+            "type": "GET"
+         },
+         "type": "DOC_READY_GET_CARD"
+       },
+       "type": "PROCESSING"
+     },
+    "id":"overview",
+    "isCardDone":"false"
+   }
+ ],
+ "syncErrors": [
+   {
+     "card": {
+       "heading": "  ",
+       "icon": "WARNING",
+       "type": "ACTION"
+     },
+    "id":"sync_errors",
+    "isCardDone":"false"
+   }
+ ],
+ "unlink": {
+   "buttonLook": "MUTTED",
+   "display": "Unlink Integration",
+   "id": "unlink",
+   "popUp": {
+     "apiEndPoint": {
+       "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+       "type": "GET"
+     },
+     "cancelButton": "Dismiss",
+     "description": "This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
+     "submitButton": "Unlink",
+     "title": "Do you really want to unlink the integration?",
+     "type": "SIMPLE"
+   },
+   "type": "POP_UP"
+ }
+}

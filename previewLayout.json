@@ -1,0 +1,27 @@
+{
+   "logo":"/third_party/cn-activecampaign.png",
+   "integDispName":"ActiveCampaign",
+   "subStepList":[
+      {
+         "stepName":"Connect",
+         "stepId":"connect"
+       
+      },
+      {
+         "stepName":"Data Validation",
+         "stepId":"step_1"
+      },
+      {
+         "stepName":"Configure Sync Preferences ",
+         "stepId":"step_2"
+      },
+      {
+         "stepName":"Run Initial Sync",
+         "stepId":"step_3"
+      },
+      {
+         "stepName":"Final step",
+         "stepId":"completed"
+      }
+   ]
+}

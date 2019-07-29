@@ -1,0 +1,40 @@
+{
+   "cards":[
+      {
+         "card": {
+            "type" : "ACTION",
+            "heading" : "4 of 10 records synced successfully",
+            "listContent":[
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign"
+            ],
+            "icon" : "SUCCESS",
+            "separatorReq":true
+         },
+         "id" : "check2",
+          "isCardDone":"true",
+         "showRetry":"true"
+         
+      },
+      {
+         "card": {
+            "type" : "ACTION",
+            "heading" : "6 of 10 records could not be synced",
+            "subHeading" : "You could fix these errors and retry sync. Or you could go ahead and sync all records. We recommend that you fix these errors and retry sync.",
+            "listContent":[
+               "<a href=\"\" target=\"blank\">Customer #344432</a> - Customer email id is unavailable",
+               "<a href=\"\" target=\"blank\">Customer #344433</a> - Customer email id is unavailable",
+               "<a href=\"\" target=\"blank\">Customer #344435</a> - Customer doesn't have any subscriptions"
+            ],
+            "icon" : "ERROR",
+            "separatorReq":true         
+         },
+         "id" : "check3",
+          "isCardDone":"true",
+         "showRetry":"true"
+        
+      }
+   ]
+}

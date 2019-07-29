@@ -1,0 +1,200 @@
+{
+  "icon": "/third_party/cn-xero.png",
+  "overview": [
+    {
+      "card": {
+        "buttons": [
+          {
+            "buttonLook": "EMPTY",
+            "display": "Sync now",
+            "icon": "AUTO_RENEW",
+            "id": "sync",
+            "request": {
+              "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json",
+                "headers": {
+                  "Elements-Formula-Instance-Id": "377696"
+                },
+                "input": {
+                  "apiKey": "test_FdeKa4XuFlZ6ZxikZjIrNLu1VNOkocOq",
+                  "siteDomain": "chargebee-labs.com",
+                  "siteName": "ipaas-test",
+                  "syncNow": "syncNow",
+                  "type": "activecampaign"
+                },
+                "type": "GET"
+              },
+              "type": "ON_CLICK_GET_CARD"
+            },
+            "type": "DIRECT_LINK"
+          }
+        ],
+        "heading": "Last sync done 0 Minutes ago ",
+        "id": "check2",
+         "message": {
+           
+           "button": {
+            "display": "See All Errors",
+            "icon": "ARROW",
+            "id": "errors",
+            "type": "POP_UP",
+	     "requestType":"authexpiry",
+             "popUp":{  
+	   "inputFields":[  
+	      {  
+		 "dispName":"Base Url",
+		 "req":"true",
+		 "type":"TEXT",
+		 "id":"text",
+		 "placeholder":"EG: ABC.ACTIVEHOSTED.COM "
+	      },
+	      {  
+		 "dispName":"API Secret",
+		 "req":"true",
+		 "type":"PASSWORD",
+		 "id":"password",
+		 "placeholder":"eg: 1233asfsdf23434343434"
+	      },
+	      {  
+		 "req":"true",
+		 "type":"CHECKBOX",
+		 "id":"checkbox1",
+		 "desc":"I'm aware that Active Campaign may store your customer and subscription data. Please refer to ActiveCampaign's <a href=\"\" target=\"blank\">Terms of Service</a>, <a href=\"\" target=\"blank\">Consent Policy</a> and <a href=\"\" target=\"blank\">Privacy Policy</a>."
+	      }
+	   ],
+	   "message":{
+	      "message":"You can get your Base URL and API secret from ActiveCampaign by navigating to Settings > Developer"
+	   },
+	   "title":"Connect to ActiveCampaign",
+	   "submitButton":"Connect",
+	   "cancelButton":"Dismiss",
+	   "description":"Specify your ActiveCampaign Base URL and API secret",
+	   "advance":"true",
+	   "type":"INPUT",
+	   "apiEndPoint":{
+		"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+		"type":"GET",
+	   	"headers":{
+			"Authorization":"sfsfsdffadssd",
+			"Elements-Formula-Instance-Id":"sfsfsdafsd"
+		},
+	   	"input":{
+			"id":"chargebee"
+		}
+	   }
+	}
+           
+          },
+          "icon": "WARNING",
+          "message": "2 customers and subscriptions could not be synced to ActiveCampaign",
+          "messageLook": "WARN"
+        },
+        "subHeading": "5  customers and subscriptions synced with ActiveCampaign",
+        "type": "ACTION2"
+      },
+      "id": "overview",
+      "isCardDone": "true"
+    }
+  ],
+  "syncErrors": [
+    {
+      "card": {
+        "buttons": [
+          {
+            "display": "Download CSV",
+            "icon": "CLOUD_DOWNLOAD",
+            "id": "download",
+            "fileId": "67000000000",
+            "type": "DOWNLOAD_FILE"
+          },
+          {
+            "buttonLook": "EMPTY",
+            "display": "IGNORE ALL",
+            "icon": "CLOSE",
+            "id": "confirmation",
+            "popUp": {
+              "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_all_error.json",
+                "headers": {
+                  "Elements-Formula-Instance-Id": "377696"
+                },
+                "type": "GET"
+              },
+              "cancelButton": "Dismiss",
+              "description": "Subscription data of this customer will not be synced with ActiveCampaign",
+              "submitButton": "Yes, go ahead",
+              "title": "Are you sure you want to ignore the errors?",
+              "type": "SIMPLE",
+              "usecase": "DANGER"
+            },
+            "type": "POP_UP"
+          }
+        ],
+        "heading": "2 errors found  ",
+        "id": "check3",
+        "listActionContent": [
+          {
+            "button": {
+              "display": "IGNORE",
+              "id": "ignore1",
+              "popUp": {
+                "apiEndPoint": {
+                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "type": "GET"
+                },
+                "cancelButton": "Dismiss",
+                "description": "Once this error is ignored, this record will not be synced to ActiveCampaign.",
+                "submitButton": "Yes, go ahead",
+                "title": "Are you sure you want to ignore?",
+                "type": "SIMPLE",
+                "usecase": "DANGER"
+              },
+              "type": "POP_UP"
+            },
+            "content": "Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred"
+          },
+          {
+            "button": {
+              "display": "IGNORE",
+              "id": "ignore2",
+              "popUp": {
+                "apiEndPoint": {
+                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "type": "GET"
+                },
+                "cancelButton": "Dismiss",
+                "description": "Once this error is ignored, this record will not be synced to ActiveCampaign.",
+                "submitButton": "Yes, go ahead",
+                "title": "Are you sure you want to ignore?",
+                "type": "SIMPLE",
+                "usecase": "DANGER"
+              },
+              "type": "POP_UP"
+            },
+            "content": "Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred"
+          }
+        ],
+        "type": "ACTION3"
+      },
+      "id": "sync_errors",
+      "isCardDone": "false"
+    }
+  ],
+  "unlink": {
+    "buttonLook": "MUTTED",
+    "display": "Unlink Integration",
+    "id": "unlink",
+    "popUp": {
+      "apiEndPoint": {
+        "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncinprogress.json",
+        "type": "GET"
+      },
+      "cancelButton": "Dismiss",
+      "description": "This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
+      "submitButton": "Unlink",
+      "title": "Do you really want to unlink the integration?",
+      "type": "SIMPLE"
+    },
+    "type": "POP_UP"
+  }
+}

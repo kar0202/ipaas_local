@@ -1,0 +1,44 @@
+{
+   "cards": [
+      {
+         "id" : "check2",
+         "card": {
+            "type" : "ACTION",
+            "heading" : "We found the following errors during data validation",
+            "listContent" : [
+               "Email address is unavailable for 3 customers in Chargebee",
+               "Subscription is unavailable for 8 customers in Chargebee"
+            ],
+            "icon" : "WARNING",
+            "buttons" :[
+               {
+                  "id":"direct",
+                  "display" : "View Error CSV",
+                  "icon" : "ARROW",
+                  "type" : "DIRECT_LINK",
+                  "url"  : "https://cb-xero-migration-dev.s3.amazonaws.com/ipaas/ipaas-test/15ojNmRQKRDEY3W/activecampaign_ipaas-test_13-May-2019%2011%3A40.csv?response-content-disposition=attachment%3Bfilename%3Dactivecampaign_ipaas-test_13-May-2019%2011%3A40.csv&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEL7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIEvcyh4t5L5oeIV0%2FhKoZKXxE2qunX37%2BWs9JjHnj0tsAiB6967sRzBloIE54668NLSPet7pmi5q2CR7BFKejgRSyCrjAwi2%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDgxNzE4MjI0MzMyMSIMnoFgBIAvfxmjdVQ%2FKrcDq2hdM9wUc1b57nDJKJnsMRFspPidCC7KXKBAm8GMtcrk%2BgdeOY4%2FUthYMKoJos0GO9w24CvpaRsofEJ1gg7hxU6PH5jUsCJ8YWKl%2BTniNNGz9XZRkN0CDqr4Mo%2FrIyW7VBAd9w8lJyrP1MhIGPApUn39IWy13VuMSLf7XlSOk1rAgmoa5HkyRb41wvZ01VEdvUGKpbfuc2ywFgt1aDHPfQyZYZEK31J1%2FZiMteHtXxzOpdwhto%2FIFJgKN31LlaQcAooagHPcLjnFg68bjalFs8dkYlos%2FFmN1katm2hBczB3n%2FsaO12k9YANNm4OksyWgD%2FNFtQqAEyWrZre1KvvTVJTj3PODBpXWSYmOUvoYIg2Dh1XXMSYesmBJR4Yv1PiLCy3Uqo4VyJK87hWTWlYE88io6rwedFJFmVcgg6nm%2Bi%2Be%2FthPKxqBTk49vyDCGiULMExBiqgX7XlvBATZEljMKNcTJEuswuyVlzbUtZjWwZU%2FGULjQrGfMALnme2kiXKkPSmhKMRdlW9KgW2QDYHdwIA%2BVhDKfO2a7oTiEdo%2FzBtnwXYBqUvmhC5EpnkB8X%2BtON1jh90GDDx%2FOPmBTq1AbFP4QckGrm7AkpwRtzVlabjd0edZPFhUjw%2BasD3CtoISw%2FRMAaTeCZ6Tw3DjmaFn8cpMpD0tH8mJWw%2BGYsLIZugyjbvM2K3efsokzIsOpxVfwkILzHUD7OWA7YImoS9WcgkcYRHF%2FxOmq7WznZU61%2BVa7Be1t%2F%2BwZn8wZJEI%2BmrR3R%2Fqa584SSJiHTYGrH9Ytva7rGy%2BPTGaRuduv7L7OF2bmTp5WZpWExtjqMEDwM9IAXAlMI%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190513T061027Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIA34Q63PH4VLG7R776%2F20190513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7bbaec15cfed67bebd8b7d720bbfb2ce9fdc6e802b40ceb8f3e3e8c911597de6"
+               },
+               {
+                  "id":"confirmation",
+                  "display" : "Ignore errors",
+                  "buttonLook":"MUTTED",
+                  "icon" : "CLOSE",
+                  "type" : "POP_UP",
+                  "popUp":{
+                     "type":"SIMPLE",
+                     "title":"Are you sure you want to ignore the errors?",
+                     "submitButton":"Yes, go ahead",
+                     "cancelButton":"Dismiss",
+                     "usecase":"DANGER",
+                     "description":"Some of your subscription data may not be synced with ActiveCampaign.",
+                     "apiEndPoint":{
+                        "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/final_updated_card.json",
+                        "type":"GET"
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

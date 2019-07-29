@@ -1,0 +1,523 @@
+{
+   "cards" : [
+      {
+         "card": {
+            "type" : "INPUT",
+            "params": [
+            	{  
+			         "dispName":"Choose the ActiveCampaign list to sync customer and subscription data with ",
+			         "req":"true",
+			         "type":"DROPDOWN",
+			         "id":"dropdown1",
+			         "allowedValues":{
+			            "option1":"My List 2",
+			            "option2":"My List 3"
+			         }
+			      }
+            ]
+         },
+         "id" : "check1"
+      },
+		{
+         "card": {
+            "type" : "INPUT",
+            "params": [
+            	{  
+			         "dispName":"Choose what happens when a customer is deleted in Chargebee",
+                  "desc":"You can choose to remove the customer from ActiveCampaign or mark them as 'Deleted'.",
+			         "req":"true",
+			         "type":"DROPDOWN",
+			         "id":"dropdown2",
+			         "allowedValues":{
+			            "option1":"Mark as Deleted",
+			            "option2":"Remove Customer"
+			         },
+		         	"defaultVal":"option2"
+		      	}
+            ]
+         },
+         "id" : "check2"
+      },
+		{
+         "card": {
+            "type" : "INPUT",
+            "params": [
+            	{		  
+			         "dispName":"Sync Customers who have gifted subscriptions",
+                  "desc":"Applicable if you have enabled gift subscriptions in Chargebee",
+			         "req":"true",
+			         "type":"TOGGLE",
+			         "id":"toggle1"
+			      }
+            ]
+         },
+         "id" : "check3"
+      },
+		{
+         "card": {
+            "type" : "TOGGLE_HIDE_INPUT",
+	   "message":{
+	      "message":"We have already mapped your customer and subscription fields from Chargebee to ActiveCampaign. You can map the custom fields you had created in Chargebee, by enabling this configuration",
+	      "icon":"DANGER_INFO",
+	      "messageLook":"DANGER"
+	    },
+            "params": [
+            	{		  
+			         "dispName":"Map Custom fields from Chargebee to ActiveCampaign",
+			         "req":"true",
+			         "type":"TOGGLE",
+			         "id":"toggle2"
+			      },
+		    {
+		       "dispName":"Subscription fields",
+			"type":"MODELBOX_INPUT_FIELDS",
+		        "id":"modelbox_check1",
+		    	"inputFields":[
+				{  
+			         "type":"SEARCH_CHECK_BOX",
+			         "id":"search",
+			         "checkboxes":[
+			            {  
+					 "type":"CHECKBOX",
+					 "id":"checkbox1",
+					 "desc":"Checkbox label 1"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox2",
+					 "desc":"Checkbox label 2"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox5",
+					 "desc":"Checkbox label 3"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox6",
+					 "desc":"Checkbox label 4"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox7",
+					 "desc":"Checkbox label 5"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox8",
+					 "desc":"Checkbox label 6"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox9",
+					 "desc":"Checkbox label 7"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox10",
+					 "desc":"Checkbox label 8"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox11",
+					 "desc":"Checkbox label 9"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox12",
+					 "desc":"Checkbox label 10"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox12",
+					 "desc":"Checkbox label 11"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox14",
+					 "desc":"Checkbox label 12"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox15",
+					 "desc":"Checkbox label 13"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox16",
+					 "desc":"Checkbox label 14"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox17",
+					 "desc":"Checkbox label 15"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox18",
+					 "desc":"Checkbox label 16"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox19",
+					 "desc":"Checkbox label 17"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox20",
+					 "desc":"Checkbox label 18"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox21",
+					 "desc":"Checkbox label 19"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox22",
+					 "desc":"Checkbox label 20"
+				      },
+					 {  
+					 "type":"CHECKBOX",
+					 "id":"checkbox23",
+					 "desc":"Checkbox label 21"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox24",
+					 "desc":"Checkbox label 22"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox25",
+					 "desc":"Checkbox label 23"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox26",
+					 "desc":"Checkbox label 24"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox27",
+					 "desc":"Checkbox label 25"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox28",
+					 "desc":"Checkbox label 26"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox29",
+					 "desc":"Checkbox label 27"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox30",
+					 "desc":"Checkbox label 28"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox31",
+					 "desc":"Checkbox label 29"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox32",
+					 "desc":"Checkbox label 30"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox33",
+					 "desc":"Checkbox label 31"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox34",
+					 "desc":"Checkbox label 32"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox35",
+					 "desc":"Checkbox label 13"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox36",
+					 "desc":"Checkbox label 34"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox37",
+					 "desc":"Checkbox label 35"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox38",
+					 "desc":"Checkbox label 36"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox39",
+					 "desc":"Checkbox label 37"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox40",
+					 "desc":"Checkbox label 38"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox41",
+					 "desc":"Checkbox label 39"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox42",
+					 "desc":"Checkbox label 40"
+				      }
+			         ]
+			      }
+			]
+		    },
+		    {
+		       "dispName":"Customer fields",
+			"type":"MODELBOX_INPUT_FIELDS",
+		        "id":"modelbox_check2",
+		    	"inputFields":[
+				{  
+			         "type":"SEARCH_CHECK_BOX",
+			         "id":"search2",
+			         "checkboxes":[
+			            {  
+					 "type":"CHECKBOX",
+					 "id":"checkbox3",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 1"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox4",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 2"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox5",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 3"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox6",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 4"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox7",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 5"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox8",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 6"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox9",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 7"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox10",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 8"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox11",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 9"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox12",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 10"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox12",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 11"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox14",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 12"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox15",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 13"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox16",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 14"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox17",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 15"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox18",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 16"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox19",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 17"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox20",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 18"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox21",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 19"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox22",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 20"
+				      },
+					 {  
+					 "type":"CHECKBOX",
+					 "id":"checkbox23",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 21"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox24",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 22"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox25",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 23"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox26",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 24"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox27",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 25"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox28",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 26"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox29",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 27"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox30",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 28"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox31",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 29"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox32",
+					 "desc":"dsfgdgdgsdgdsfgdsgfdsgdsgfdsgdsfgdfsgdsfgdsgdCheckbox label 30"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox33",
+					 "desc":"Checkbox label 31"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox34",
+					 "desc":"Checkbox label 32"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox35",
+					 "desc":"Checkbox label 13"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox36",
+					 "desc":"Checkbox label 34"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox37",
+					 "desc":"Checkbox label 35"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox38",
+					 "desc":"Checkbox label 36"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox39",
+					 "desc":"Checkbox label 37"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox40",
+					 "desc":"Checkbox label 38"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox41",
+					 "desc":"Checkbox label 39"
+				      },
+				 	{  
+					 "type":"CHECKBOX",
+					 "id":"checkbox42",
+					 "desc":"Checkbox label 40"
+				      }
+			         ]
+			      }
+			]
+		    }
+            ]
+         },
+         "id" : "check4"
+      }
+    ],
+   "proceed":{
+      "id":"proceed",
+      "display" : "Proceed",
+      "icon" : "ARROW",
+      "buttonLook":"FILLED",
+      "type" : "DIRECT_LINK",
+      "request":{
+         "type":"ON_CLICK_SEND_INPUT",
+         "apiEndPoint":{
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+            "type":"GET",
+            "headers":{
+               "Authorization":"sfsfsdffadssd",
+               "Elements-Formula-Instance-Id":"sfsfsdafsd"
+            },
+            "input":{
+               "id":"chargebee"
+            }
+         }
+      }
+    }
+}

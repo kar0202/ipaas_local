@@ -1,0 +1,52 @@
+{
+  "icon": "/third_party/cn-xero.png",
+  "overview": [
+    {
+      "card": {
+            "type" : "ACTION2",
+            "heading" : "Last sync done 0 Minutes ago ",
+        "subHeading": "5  customers and subscriptions synced with ActiveCampaign",
+            "icon" : "WARNING",
+          "buttons": [
+          {
+            "buttonLook": "EMPTY",
+            "display": "Sync now",
+            "icon": "AUTO_RENEW",
+            "id": "sync",
+            "request": {
+              "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json",
+                "headers": {
+                  "Elements-Formula-Instance-Id": "377696"
+                },
+                "input": {
+                  "apiKey": "test_FdeKa4XuFlZ6ZxikZjIrNLu1VNOkocOq",
+                  "siteDomain": "chargebee-labs.com",
+                  "siteName": "ipaas-test",
+                  "syncNow": "syncNow",
+                  "type": "activecampaign"
+                },
+                "type": "GET"
+              },
+              "type": "ON_CLICK_GET_CARD"
+            },
+            "type": "DIRECT_LINK"
+          }
+        ]
+         },
+      "id": "overview",
+      "isCardDone": "true"
+    }
+  ],
+  "syncErrors": [
+    {
+      "card": {
+            "type" : "ACTION",
+            "heading" : "You've ignored errors found during Sync.",
+            "icon" : "WARNING"
+         },
+      "id": "sync_errors",
+      "isCardDone": "false"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+	"cards":[
+		{
+		 "card": {
+		    "type" : "ACTION3",
+		    "heading" : "10 error(s) found",
+		    "listActionContent":[
+			    {
+				    "content":"Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred",
+				    "button" :{
+					  "id":"ignore2",
+					  "display" : "IGNORE",
+					  "type" : "POP_UP",
+					  "popUp":{
+					     "type":"SIMPLE",
+					     "title":"Are you sure you want to ignore?",
+					     "submitButton":"Yes, go ahead",
+					     "cancelButton":"Dismiss",
+					     "usecase":"DANGER",
+					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
+					     "apiEndPoint":{
+						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+						"type":"GET"
+					     }
+					  }
+				       }
+			    },
+			    {
+				    "content":"Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred",
+				    "button" :{
+					  "id":"ignore2",
+					  "display" : "IGNORE",
+					  "type" : "POP_UP",
+					  "popUp":{
+					     "type":"SIMPLE",
+					     "title":"Are you sure you want to ignore?",
+					     "submitButton":"Yes, go ahead",
+					     "cancelButton":"Dismiss",
+					     "usecase":"DANGER",
+					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
+					     "apiEndPoint":{
+						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+						"type":"GET"
+					     }
+					  }
+				       }
+			    }
+		    ]
+		}
+		}
+		]
+}
