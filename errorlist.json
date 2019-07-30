@@ -19,7 +19,7 @@
 					     "usecase":"DANGER",
 					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
 					     "apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+						"apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/ignore_error.json",
 						"type":"GET"
 					     }
 					  }
@@ -39,7 +39,7 @@
 					     "usecase":"DANGER",
 					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
 					     "apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+						"apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/ignore_error.json",
 						"type":"GET"
 					     }
 					  }
