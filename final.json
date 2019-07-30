@@ -11,7 +11,7 @@
             "id": "sync",
             "request": {
               "apiEndPoint": {
-                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json",
+                "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/syncpage.json",
                 "headers": {
                   "Elements-Formula-Instance-Id": "377696"
                 },
@@ -72,7 +72,7 @@
 	   "advance":"true",
 	   "type":"INPUT",
 	   "apiEndPoint":{
-		"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+		"apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json",
 		"type":"GET",
 	   	"headers":{
 			"Authorization":"sfsfsdffadssd",
@@ -114,7 +114,7 @@
             "id": "confirmation",
             "popUp": {
               "apiEndPoint": {
-                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_all_error.json",
+                "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/ignore_all_error.json",
                 "headers": {
                   "Elements-Formula-Instance-Id": "377696"
                 },
@@ -139,7 +139,7 @@
               "id": "ignore1",
               "popUp": {
                 "apiEndPoint": {
-                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/ignore_error.json",
                   "type": "GET"
                 },
                 "cancelButton": "Dismiss",
@@ -159,7 +159,7 @@
               "id": "ignore2",
               "popUp": {
                 "apiEndPoint": {
-                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/ignore_error.json",
                   "type": "GET"
                 },
                 "cancelButton": "Dismiss",
@@ -186,7 +186,7 @@
     "id": "unlink",
     "popUp": {
       "apiEndPoint": {
-        "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncinprogress.json",
+        "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/syncinprogress.json",
         "type": "GET"
       },
       "cancelButton": "Dismiss",
