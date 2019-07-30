@@ -7,7 +7,7 @@
          "stepId":"connect",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect.json"
          }
       },
       {
@@ -15,11 +15,11 @@
          "stepId":"step_1",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/validation_step.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/validation_step.json"
          },
          "backStepApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json"
          }
       },
       {
@@ -27,14 +27,14 @@
          "stepId":"step_2",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/mapping_step.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/mapping_step.json"
          },
          "editConfig":{
             "title":"Manage how Chargebee syncs data with ActiveCampaign",
             "display" : "Manage sync rules",
             "apiEndPoint": {
                "type":"GET",
-               "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/edit_mapping_step.json"
+               "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/edit_mapping_step.json"
             }
          }
       },
@@ -43,7 +43,7 @@
          "stepId":"step_3",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/initial_sync_step.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/initial_sync_step.json"
          }
       },
       {
@@ -51,11 +51,11 @@
          "stepId":"completed",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/syncpage.json"
          },
          "fullSyncApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json"
          }
       }
    ]
