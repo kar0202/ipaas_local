@@ -15,7 +15,7 @@
                   "request":{
                      "type":"ON_CLICK_GET_CARD",
                      "apiEndPoint":{
-                        "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/sync_process.json",
+                        "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/sync_process.json",
                         "type":"GET"
                      }
                   }
@@ -39,7 +39,7 @@
          "cancelButton":"Dismiss",
          "description":"All your customer and subscription data will be synced with Active Campaign. You can fix the errors, if any, sync the data again, later.",
          "apiEndPoint":{
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json",
             "type":"GET"
          }
       }
@@ -53,7 +53,7 @@
       "request":{
          "type":"ON_CLICK_DEFAULT_ACTION",
          "apiEndPoint":{
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json",
             "type":"GET",
             "headers":{
                "Authorization":"sfsfsdffadssd",
