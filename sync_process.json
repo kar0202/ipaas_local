@@ -7,7 +7,7 @@
             "request" : {
                "type":"DOC_READY_GET_CARD",
                "apiEndPoint":{
-                  "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/sync_result.json",
+                  "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/sync_result.json",
                   "type":"GET"
                }
             }
