@@ -15,7 +15,7 @@
             "id": "sync",
             "request": {
               "apiEndPoint": {
-                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json",
+                "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/syncpage.json",
                 "headers": {
                   "Elements-Formula-Instance-Id": "377696"
                 },
