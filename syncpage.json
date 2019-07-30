@@ -7,7 +7,7 @@
        "processingText": " Syncing All customers and their subscriptions",
        "request": {
          "apiEndPoint": {
-           "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/final.json",
+           "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/final.json",
             "type": "GET"
          },
          "type": "DOC_READY_GET_CARD"
@@ -35,7 +35,7 @@
    "id": "unlink",
    "popUp": {
      "apiEndPoint": {
-       "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+       "apiUrl": "https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json",
        "type": "GET"
      },
      "cancelButton": "Dismiss",
