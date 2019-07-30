@@ -508,7 +508,7 @@
       "request":{
          "type":"ON_CLICK_SEND_INPUT",
          "apiEndPoint":{
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json",
             "type":"GET",
             "headers":{
                "Authorization":"sfsfsdffadssd",
