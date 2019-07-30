@@ -19,7 +19,7 @@
          },
          "backStepApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/connect.json"
          }
       },
       {
@@ -28,6 +28,10 @@
          "apiEndPoint": {
             "type":"GET",
             "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/mapping_step.json"
+         },
+         "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/validation_step.json"
          },
          "editConfig":{
             "title":"Manage how Chargebee syncs data with ActiveCampaign",
@@ -44,6 +48,10 @@
          "apiEndPoint": {
             "type":"GET",
             "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/initial_sync_step.json"
+         },
+         "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/mapping_step.json"
          }
       },
       {
