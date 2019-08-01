@@ -55,5 +55,21 @@
 		}
 	   }
 	}
-    }
+    },
+
+	"message":{
+			      "message":"We will sync 10 fields from Chargebee to Pipedrive. You can sync more fields by enabling the configuration below",
+			      "icon":"INFO",
+			      "messageLook":"INFO",
+			      "boxNeeded":"false",
+			 "button": {
+			    "display": "Read Privacy Policy",
+			    "icon": "OPENINNEW",
+			    "url":"https://www.chargebee.com/docs/index.html",
+			    "id": "readprivacy",
+			    "type": "DIRECT_LINK",
+		            "newTab":"true"       
+			  }
+	}	
+	
 }
