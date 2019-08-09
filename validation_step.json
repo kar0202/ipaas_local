@@ -14,7 +14,7 @@
             "request" : {
                "type":"DOC_READY_GET_CARD",
                "apiEndPoint":{
-                  "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/updated_card.json",
+                  "apiUrl":"https://raw.githubusercontent.com/kar0202/ipaas_local/master/validation_step.json",
                   "type":"GET"
                }
             }
